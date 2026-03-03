@@ -11,7 +11,7 @@ RUNS_TIMED_PAGES = 300      # pages for runs?timed=true
 RUNS_ALL_PAGES = 300        # pages for runs (all, includes overtime)
 
 WORKERS = 8                 # 4..10 (если 429/ошибки — снизь)
-OUT_LUA = Path(r"G:\Games\World of Warcraft Sirus\Interface\AddOns\SirusMythicTooltip\Data.lua")
+OUT_LUA = Path(__file__).with_name("Data.lua")
 
 API_SCORES = f"https://sirus.su/api/base/{BASE_ID}/leaderboard/challenge/scores"
 API_RUNS   = f"https://sirus.su/api/base/{BASE_ID}/leaderboard/challenge/runs"
